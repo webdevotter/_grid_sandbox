@@ -18,6 +18,42 @@
       font-weight: bold;
       text-align: center;
     }
+
+    .item:first-child {
+      /* Long Way */
+
+      /* grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3; */
+
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+    }
+
+    .item:nth-child(9) {
+      grid-column: 2 / span 3;
+      grid-row: 4 / span 3;
+      background-color: orange !important;
+    }
+
+    .item:nth-child(even) {
+      background-color: red;
+    }
+
+    .item:last-child {
+      background-color: green !important;
+    }
+
+    .item:first-child {
+      background-color: blue !important;
+    }
+
+    .item:nth-child(odd) {
+      background-color: yellow;
+    }
+
+
   </style>
 </head>
 <body>
